@@ -1,0 +1,37 @@
+name: Sync Supabase to Dataset
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # اجرا هر روز ساعت 12 شب به وقت جهانی
+  workflow_dispatch: # اضافه کردن دکمه برای اجرای دستی
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install supabase
+
+      - name: Run Sync Script
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python sync_data.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add dataset/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update dataset with new approved items" && git push)
