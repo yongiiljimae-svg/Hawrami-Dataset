@@ -33,5 +33,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add dataset/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update dataset with new approved items" && git push)
+          if [ -d "dataset" ]; then
+            git add dataset/
+            git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update dataset with new approved items" && git push)
+          else
+            echo "No new data to sync. Skipping commit."
+          fi
