@@ -1,0 +1,2 @@
+﻿id,category,word_hac,word_fa,voice_file_id,word_type,example_hac,example_fa,usage_type,source,details,dialect,status,points_pending,channel_message_id,user_id,created_at,edit_open_public,edit_claim_user_id,last_editor_id
+10,home,یانه,خانه,AwACAgQAAxkBAAICAmqdfyq0xbpNhaUREGPiOIxFrJzrAAI6IQACuzfxUH110wOMWBXCPQQ,اسم,ملایملو پەی یانەی,دارم به خونه میرم,محاوره‌ای,,"{'number_forms': 'یانه\nیانێ', 'sentence_variation': {'mood': 'خبری', 'gender': 'فرقی نمی\u200cکند'}}",takht,approved,10,34,7475727341,2026-09-06T15:07:32.046771+00:00,False,,
