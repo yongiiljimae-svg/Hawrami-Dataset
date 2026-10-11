@@ -1,2 +1,6 @@
 ﻿id,category,word_hac,word_fa,voice_file_id,word_type,example_hac,example_fa,usage_type,source,details,dialect,status,points_pending,channel_message_id,user_id,created_at,edit_open_public,edit_claim_user_id,last_editor_id
 10,home,یانه,خانه,AwACAgQAAxkBAAICAmqdfyq0xbpNhaUREGPiOIxFrJzrAAI6IQACuzfxUH110wOMWBXCPQQ,اسم,ملایملو پەی یانەی,دارم به خونه میرم,محاوره‌ای,,"{'number_forms': 'یانه\nیانێ', 'sentence_variation': {'mood': 'خبری', 'gender': 'فرقی نمی\u200cکند'}}",takht,approved,10,34,7475727341,2026-09-06T15:07:32.046771+00:00,False,,
+12,family,برۆ,ابرو,,اسم,"بروێت سیاوێنێ
+ برۆت سیاوا","ابروهات سیاهن
+ابروت سیاهه",محاوره‌ای,,"{'number_forms': 'برۆ\nبروێ', 'sentence_variation': {'gender': 'فرقی نمی\u200cکند'}}",takht,approved,10,44,7475727341,2026-10-09T07:24:29.112367+00:00,False,,
+17,place,وه‌ر,جلو,,اسم,بۆ وەرۆ,بیا جلو,محاوره‌ای,,{'sentence_variation': {'gender': 'فرقی نمی\u200cکند'}},takht,approved,10,51,7475727341,2026-10-09T10:32:37.198665+00:00,False,,
